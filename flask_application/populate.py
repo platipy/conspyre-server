@@ -9,7 +9,7 @@ def create_users():
     for u in  (('acbart','Austin Cory Bart', 'acbart@vt.edu','password',['admin'],True),
                ('rcastle','Rick Castle', 'castle@udel.edu','password',['teacher'],True),
                ('lelouch','Lelouch Lamperouge', 'lulu@ashford.com','password',['student'],True),
-               ('kirk','James Kirk', 'jtkirk@lp.com','password',['developer'],False)):
+               ('kirk','James Kirk', 'jtkirk@lp.com','password',['developer'],True)):
         user_datastore.create_user(username=u[0], name=u[1], email=u[2], password=u[3],
                                    roles=u[4], active=u[5])
         db.session.commit()

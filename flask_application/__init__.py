@@ -11,7 +11,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # Config
-if os.getenv('DEV') == 'yes':
+if True: #os.getenv('DEV') == 'yes':
     app.config.from_object('flask_application.config.DevelopmentConfig')
     app.logger.info("Config: Development")
 elif os.getenv('TEST') == 'yes':

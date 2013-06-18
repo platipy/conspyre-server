@@ -20,7 +20,7 @@ class Config(object):
     MAIL_PASSWORD = base64.b64decode('') # Might be 'FY29yeUJhcnQwOw==FYWNiME9TQzs='
     DEFAULT_MAIL_SENDER = 'Admin < admin@email.email >'
     
-    #SECURITY_CONFIRMABLE = True
+    SECURITY_CONFIRMABLE = False
     SECURITY_LOGIN_WITHOUT_CONFIRMATION = True
     SECURITY_REGISTERABLE = True
     SECURITY_RECOVERABLE = True
